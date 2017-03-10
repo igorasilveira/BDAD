@@ -6,6 +6,7 @@ Construir um modelo conceptual para modelar informação de uma aplicação base
 Os utilizadores podem registar-se com um username, email, data de nascimento e país.
 
 As subscrições podem ser:
+
   -> grátis (publicidade durante o uso da aplicação)
   
   -> premium (custo mensal de 6.99€, com download offline); sem anúncios, escolha de música na playlist/albúm; saltar música; melhor
