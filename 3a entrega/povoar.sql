@@ -342,14 +342,6 @@ insert into MusicaAlbumArtista (muID, abID, aID) values ('58e157d2fc13ae46c70000
 insert into MusicaAlbumArtista (muID, abID, aID) values ('58e157d2fc13ae46c7000080','58e1126969fc13ae494e0009', '58e154b1fc13ae46c7000028');
 
 
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000020', '58e154b1fc13ae46c7000021');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000019', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c7000018');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
-
-
 insert into PlaylistGuardaMusica (plID, muID) values('58e15758fc13ae454c000031','58e157d2fc13ae46c7000061');
 insert into PlaylistGuardaMusica (plID, muID) values('58e15758fc13ae454c000031','58e157d2fc13ae46c7000062');
 insert into PlaylistGuardaMusica (plID, muID) values('58e15758fc13ae454c000031','58e157d2fc13ae46c7000063');
