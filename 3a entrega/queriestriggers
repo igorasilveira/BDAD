@@ -1,10 +1,10 @@
 Queries:
 
 1. Número total de músicas da banda x
-2. 
+2.
 3. Listar albums por ano.
 4. Listar artistas que têm mais que uma música numa dada playlista de um amigo
-    
+
 5. Musicas superiores a x minutos
 
 6. Listar os seguidores de um dado utilizador
@@ -26,10 +26,14 @@ Queries:
 
     Listar os artistas relacionados com o artista x seguido pelo utilizador, que não são seguidos por ele e que ele tem pelo menos uma música guardada_
 
+    quais os artistas que os meus amigos em 3º grau seguem
+
+    quais os utlizadores que gostam de todos os albuns de um Artista
+
+    
 
 Triggers:
 
 1. Não criar uma música que tenha mais de 2 horas de duração
 2. Não criar albuns de tipos diferentes com o mesmo nome, de um dado artista
-3. 
-
+3.
