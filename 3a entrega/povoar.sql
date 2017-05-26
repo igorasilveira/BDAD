@@ -314,11 +314,6 @@ insert into AlbumGenero (abID, genID) values ('58e1126969fc13ae494e000a', '58e15
 insert into AlbumGenero (abID, genID) values ('58e1126969fc13ae494e000b', '58e1522ffc13ae454c00000e');
 
 
-insert into ArtistaRelacionaArtista (aID1, aID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
-insert into ArtistaRelacionaArtista (aID1, aID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
-insert into ArtistaRelacionaArtista (aID1, aID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
-
-
 insert into AlbumRelacionaAlbum (abID1, abID2) values ('58e1126969fc13ae494e0001', '58e1126969fc13ae494e0002');
 insert into AlbumRelacionaAlbum (abID1, abID2) values ('58e1126969fc13ae494e0007', '58e1126969fc13ae494e0007');
 insert into AlbumRelacionaAlbum (abID1, abID2) values ('58e1126969fc13ae494e000b', '58e1126969fc13ae494e000a');
