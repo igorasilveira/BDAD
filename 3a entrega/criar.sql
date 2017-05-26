@@ -3,225 +3,227 @@
 
 drop table if exists Utilizador;
 create table Utilizador (
-  UserName VARCHAR(20) PRIMARY KEY,
-  Email VARCHAR(255) UNIQUE NOT NULL,
-  DataNascimento DATE NOT NULL,
-  Telefone VARCHAR(255) UNIQUE,
-  Password VARCHAR(18) NOT NULL,
-  Morada VARCHAR(255) DEFAULT 'N/D'
+  username VARCHAR(20) PRIMARY KEY,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  dataNascimento DATE NOT NULL,
+  telefone VARCHAR(255) UNIQUE,
+  password VARCHAR(18) NOT NULL,
+  morada VARCHAR(255) DEFAULT 'N/D',
+  paisID BLOB,
+  FOREIGN KEY (paisID) REFERENCES Pais(paisID)
 );
 
 drop table if exists UtilizadorSegueUtilizador;
 create table UtilizadorSegueUtilizador (
-  UserName1 VARCHAR(20),
-  UserName2 VARCHAR(20),
-  PRIMARY KEY (UserName1, UserName2),
-  FOREIGN KEY (UserName1) REFERENCES Utilizador(UserName),
-  FOREIGN KEY (UserName2) REFERENCES Utilizador(UserName)
+  username1 VARCHAR(20),
+  username2 VARCHAR(20),
+  PRIMARY KEY (username1, username2),
+  FOREIGN KEY (username1) REFERENCES Utilizador(username),
+  FOREIGN KEY (username2) REFERENCES Utilizador(username)
 );
 
 drop table if exists ArtistaRelacionaArtista;
 create table ArtistaRelacionaArtista (
-  AID1 BLOB,
-  AID2 BLOB,
-  PRIMARY KEY (AID1, AID2),
-  FOREIGN KEY (AID1) REFERENCES Artista(AID),
-  FOREIGN KEY (AID2) REFERENCES Artista(AID)
+  aID1 BLOB,
+  aID2 BLOB,
+  PRIMARY KEY (aID1, aID2),
+  FOREIGN KEY (aID1) REFERENCES Artista(aID),
+  FOREIGN KEY (aID2) REFERENCES Artista(aID)
 );
 
 drop table if exists ArtistaSegueArtista;
 create table ArtistaSegueArtista (
-  AID1 BLOB,
-  AID2 BLOB,
-  PRIMARY KEY (AID1, AID2),
-  FOREIGN KEY (AID1) REFERENCES Artista(AID),
-  FOREIGN KEY (AID2) REFERENCES Artista(AID)
+  aID1 BLOB,
+  aID2 BLOB,
+  PRIMARY KEY (aID1, aID2),
+  FOREIGN KEY (aID1) REFERENCES Artista(aID),
+  FOREIGN KEY (aID2) REFERENCES Artista(aID)
 );
 
 drop table if exists UtilizadorLocaliza;
 create table UtilizadorLocaliza (
-  UserName VARCHAR(20),
-  CPGeral VARCHAR(20),
-  PRIMARY KEY (UserName, CPGeral),
-  FOREIGN KEY (UserName) REFERENCES Utilizador(UserName),
-  FOREIGN KEY (CPGeral) REFERENCES Localidade(CPGeral)
+  username VARCHAR(20),
+  cpGeral VARCHAR(20),
+  PRIMARY KEY (username, cpGeral),
+  FOREIGN KEY (username) REFERENCES Utilizador(username),
+  FOREIGN KEY (cpGeral) REFERENCES Localidade(cpGeral)
 );
 
 drop table if exists UtilizadorGuardaPlaylist;
 create table UtilizadorGuardaPlaylist (
-  UserName VARCHAR(20),
-  PLID INT,
-  PRIMARY KEY (UserName, PLID),
-  FOREIGN KEY (UserName) REFERENCES Utilizador(UserName),
-  FOREIGN KEY (PLID) REFERENCES Playlist(PLID)
+  username VARCHAR(20),
+  plID INT,
+  PRIMARY KEY (username, plID),
+  FOREIGN KEY (username) REFERENCES Utilizador(username),
+  FOREIGN KEY (plID) REFERENCES Playlist(plID)
 );
 
 drop table if exists UtilizadorFavoritaMusica;
 create table UtilizadorFavoritaMusica (
-  UserName VARCHAR(20),
-  MuID INT,
-  PRIMARY KEY (UserName, MuID),
-  FOREIGN KEY (UserName) REFERENCES Utilizador(UserName),
-  FOREIGN KEY (MuID) REFERENCES Musica(MuID)
+  username VARCHAR(20),
+  muID INT,
+  PRIMARY KEY (username, muID),
+  FOREIGN KEY (username) REFERENCES Utilizador(username),
+  FOREIGN KEY (muID) REFERENCES Musica(muID)
 );
 
 drop table if exists UtilizadorOuveMusica;
 create table UtilizadorOuveMusica (
-  UserName VARCHAR(20),
-  MuID INT,
-  Time_Stamp VARCHAR(255) NOT NULL,
-  PRIMARY KEY (UserName, MuID),
-  FOREIGN KEY (UserName) REFERENCES Utilizador(UserName),
-  FOREIGN KEY (MuID) REFERENCES Musica(MuID)
+  username VARCHAR(20),
+  muID INT,
+  time_stamp VARCHAR(255) NOT NULL,
+  PRIMARY KEY (username, muID),
+  FOREIGN KEY (username) REFERENCES Utilizador(username),
+  FOREIGN KEY (muID) REFERENCES Musica(muID)
 );
 
 drop table if exists UtilizadorFavoritaAlbum;
 create table UtilizadorFavoritaAlbum (
-  UserName VARCHAR(20),
-  AbID INT,
-  PRIMARY KEY (UserName, AbID),
-  FOREIGN KEY (UserName) REFERENCES Utilizador(UserName),
-  FOREIGN KEY (AbID) REFERENCES Album(AbID)
+  username VARCHAR(20),
+  abID INT,
+  PRIMARY KEY (username, abID),
+  FOREIGN KEY (username) REFERENCES Utilizador(username),
+  FOREIGN KEY (abID) REFERENCES Album(abID)
 );
 
 drop table if exists UtilizadorSegueArtista;
 create table UtilizadorSegueArtista (
-  UserName VARCHAR(20),
-  AID BLOB,
-  PRIMARY KEY (UserName, AID),
-  FOREIGN KEY (Username) REFERENCES Utilizador(UserName),
-  FOREIGN KEY (AID) REFERENCES Artista(AID)
+  username VARCHAR(20),
+  aID BLOB,
+  PRIMARY KEY (username, aID),
+  FOREIGN KEY (username) REFERENCES Utilizador(username),
+  FOREIGN KEY (aID) REFERENCES Artista(aID)
 );
 
 drop table if exists Conta;
 create table Conta (
-  CID BLOB PRIMARY KEY,
-  Preco FLOAT NOT NULL CHECK(Preco>=0),
-  DataInicio DATE NOT NULL,
-  DataFim DATE NOT NULL CHECK(DataInicio<DataFim),
-  Utilizador VARCHAR(20) NOT NULL REFERENCES Utilizador(UserName),
-  Pagamento VARCHAR(13) NOT NULL REFERENCES Pagamento CHECK(Pagamento in ('gratuito', 'CartaoCredito', 'Paypal', 'PaysafeCard')),
-  TipoConta VARCHAR(8) NOT NULL REFERENCES TipoConta CHECK(TipoConta in ('0.0', '6.99', '10.99'))
+  cID BLOB PRIMARY KEY,
+  preco FLOAT NOT NULL CHECK(preco>=0),
+  dataInicio DATE NOT NULL,
+  dataFim DATE NOT NULL CHECK(dataInicio<dataFim),
+  utilizador VARCHAR(20) NOT NULL REFERENCES Utilizador(username),
+  pagamento VARCHAR(13) NOT NULL REFERENCES pagamento CHECK(pagamento in ('gratuito', 'CartaoCredito', 'Paypal', 'PaysafeCard')),
+  tipoConta VARCHAR(8) NOT NULL REFERENCES TipoConta CHECK(tipoConta in ('0.0', '6.99', '10.99'))
 );
 
 drop table if exists Pagamento;
 create table Pagamento (
-  Forma VARCHAR(13) PRIMARY KEY CHECK(Forma in ('gratuito', 'CartaoCredito', 'Paypal', 'PaysafeCard'))
+  forma VARCHAR(13) PRIMARY KEY CHECK(forma in ('gratuito', 'CartaoCredito', 'Paypal', 'PaysafeCard'))
 );
 
 drop table if exists TipoConta;
 create table TipoConta (
-  PrecoMensal VARCHAR(8) PRIMARY KEY CHECK(PrecoMensal in ('0.0', '6.99', '10.99'))
+  precoMensal VARCHAR(8) PRIMARY KEY CHECK(precoMensal in ('0.0', '6.99', '10.99'))
 );
 
 drop table if exists Localidade;
 create table Localidade (
-  CPGeral CHAR(4) PRIMARY KEY,
-  Nome VARCHAR(255) NOT NULL,
-  PaisID INT NOT NULL CHECK(PaisID > 0) REFERENCES Pais,
-  FOREIGN KEY (PaisID) REFERENCES Pais(PaisID)
+  cpGeral CHAR(4) PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  paisID INT NOT NULL CHECK(paisID > 0) REFERENCES Pais,
+  FOREIGN KEY (paisID) REFERENCES Pais(paisID)
 );
 
 drop table if exists Playlist;
 create table Playlist (
-  PLID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) DEFAULT 'PLID'
+  plID BLOB PRIMARY KEY,
+  nome VARCHAR(255) DEFAULT 'plID'
 );
 
 drop table if exists PlaylistGuardaMusica;
 create table PlaylistGuardaMusica (
-  PLID BLOB,
-  MuID BLOB,
-  PRIMARY KEY (PLID, MuID),
-  FOREIGN KEY (PLID) REFERENCES Playlist(PLID),
-  FOREIGN KEY (MuID) REFERENCES Musica(MuID)
+  plID BLOB,
+  muID BLOB,
+  PRIMARY KEY (plID, muID),
+  FOREIGN KEY (plID) REFERENCES Playlist(plID),
+  FOREIGN KEY (muID) REFERENCES Musica(muID)
 );
 
 drop table if exists Musica;
 create table Musica (
-  MuID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) NOT NULL,
-  Duracao INT NOT NULL CHECK(Duracao>0)
+  muID BLOB PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  duracao INT NOT NULL CHECK(duracao>0)
 );
 
 drop table if exists Album;
 create table Album (
-  AbID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) NOT NULL,
-  Ano INT NOT NULL CHECK(Ano>1900),
-  TipoID INT NOT NULL CHECK(TipoID > 0) REFERENCES Tipo(TipoID),
-  FOREIGN KEY (TipoID) REFERENCES Tipo(TipoID)
+  abID BLOB PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  ano INT NOT NULL CHECK(Ano>1900),
+  tipoID INT NOT NULL CHECK(tipoID > 0) REFERENCES Tipo(tipoID),
+  FOREIGN KEY (tipoID) REFERENCES Tipo(tipoID)
 );
 
 drop table if exists AlbumRelacionaAlbum;
 create table AlbumRelacionaAlbum (
-  AbID1 BLOB,
-  AbID2 BLOB,
-  PRIMARY KEY (AbID1, AbID2),
-  FOREIGN KEY (AbID1) REFERENCES Album(AbID),
-  FOREIGN KEY (AbID2) REFERENCES Album(AbID)
+  abID1 BLOB,
+  abID2 BLOB,
+  PRIMARY KEY (abID1, abID2),
+  FOREIGN KEY (abID1) REFERENCES Album(abID),
+  FOREIGN KEY (abID2) REFERENCES Album(abID)
 );
 
 drop table if exists AlbumGenero;
 create table AlbumGenero (
-  AbID BLOB,
-  GenID BLOB,
-  PRIMARY KEY (AbID, GenID),
-  FOREIGN KEY (AbID) REFERENCES Album(AbID),
-  FOREIGN KEY (GenID) REFERENCES Genero(GenID)
+  abID BLOB,
+  genID BLOB,
+  PRIMARY KEY (abID, genID),
+  FOREIGN KEY (abID) REFERENCES Album(abID),
+  FOREIGN KEY (genID) REFERENCES Genero(genID)
 );
 
 drop table if exists Artista;
 create table Artista (
-  AID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) NOT NULL,
-  Biografia VARCHAR(255) DEFAULT 'Sem Informacao',
-  PaisID BLOB NOT NULL CHECK(PaisID>0) REFERENCES Pais(PaisID),
-  FOREIGN KEY (PaisID) REFERENCES Pais(PaisID)
+  aID BLOB PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  biografia VARCHAR(255) DEFAULT 'Sem Informacao',
+  paisID BLOB NOT NULL CHECK(paisID>0) REFERENCES pais(paisID),
+  FOREIGN KEY (paisID) REFERENCES Pais(paisID)
 );
 
 drop table if exists MusicaAlbumArtista;
 create table MusicaAlbumArtista (
-  MuID BLOB,
-  AbID BLOB,
-  AID BLOB,
-  PRIMARY KEY (MuID, AbID, AID),
-  FOREIGN KEY (AID) REFERENCES Artista(AID),
-  FOREIGN KEY (AbID) REFERENCES Album(AbID),
-  FOREIGN KEY (MuID) REFERENCES MUsica(MuID)
+  muID BLOB,
+  abID BLOB,
+  aID BLOB,
+  PRIMARY KEY (muID, abID, aID),
+  FOREIGN KEY (aID) REFERENCES Artista(aID),
+  FOREIGN KEY (abID) REFERENCES Album(abID),
+  FOREIGN KEY (muID) REFERENCES Musica(muID)
 );
 
 drop table if exists Publicitario;
 create table Publicitario (
-  PID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) NOT NULL,
-  Investimento INT NOT NULL CHECK(Investimento>0),
-  PaisID BLOB NOT NULL CHECK(PaisID>0) REFERENCES Pais,
-  FOREIGN KEY (PaisID) REFERENCES Pais(PaisID)
+  pID BLOB PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  investimento INT NOT NULL CHECK(investimento>0),
+  paisID BLOB NOT NULL CHECK(paisID>0) REFERENCES Pais(paisID),
+  FOREIGN KEY (paisID) REFERENCES Pais(paisID)
 );
 
 drop table if exists Publicidade;
 create table Publicidade (
-  PbID BLOB PRIMARY KEY,
-  Duracao INTEGER NOT NULL CHECK(Duracao>0),
-  PID BLOB NOT NULL,
-  FOREIGN KEY (PID) REFERENCES Publicitario(PID)
+  pbID BLOB PRIMARY KEY,
+  duracao INTEGER NOT NULL CHECK(duracao>0),
+  pID BLOB NOT NULL,
+  FOREIGN KEY (pID) REFERENCES Publicitario(pID)
 );
 
 drop table if exists Pais;
 create table Pais (
-  PaisID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) UNIQUE
+  paisID BLOB PRIMARY KEY,
+  nome VARCHAR(255) UNIQUE
 );
 
 drop table if exists Tipo;
 create table Tipo (
-  TipoID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) UNIQUE
+  tipoID BLOB PRIMARY KEY,
+  nome VARCHAR(255) UNIQUE
 );
 
 drop table if exists Genero;
 create table Genero (
-  GenID BLOB PRIMARY KEY,
-  Nome VARCHAR(255) UNIQUE
+  genID BLOB PRIMARY KEY,
+  nome VARCHAR(255) UNIQUE
 );
