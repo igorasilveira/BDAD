@@ -26,7 +26,7 @@ insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password) val
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password, Morada) values ('hthompsonn', 'crayn@eepurl.com', '1962-10-01', '86-(759)681-8128', 'NrnKVbqfm', '2927 Tomscot Court');
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password, Morada) values ('cowenso', 'estanleyo@storify.com', '1975-03-20', '55-(268)420-4307', 'IaFzgkLW2jr', '136 Dahle Terrace');
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password, Morada) values ('wcrawfordp', 'jmillsp@pbs.org', '1974-11-13', '7-(195)635-2413', 'klGHVJS', '85334 Bobwhite Terrace');
-insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password, Morada) values ('sjacobsq', 'jwatsonq@printfriendly.com', '1980-07-04', '358-(858)847-9215', 'pALnolxfNr2', '35277 Crescent Oaks Plaza');
+insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password, Morada) values ('jwatsonq', 'jwatsonq@printfriendly.com', '1980-07-04', '358-(858)847-9215', 'pALnolxfNr2', '35277 Crescent Oaks Plaza');
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password) values ('jlawrencer', 'sfloresr@ted.com', '1957-05-12', '63-(214)188-6501', 'GSeUqephhbF');
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password) values ('pcarrolls', 'ewhites@howstuffworks.com', '1970-06-17', '86-(126)263-9764', '5JIwhCg');
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password) values ('bwatsont', 'rclarkt@oakley.com', '1955-12-24', '380-(369)428-5684', 'jlKj4oxyVcZ');
@@ -51,55 +51,6 @@ insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password, Mor
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password) values ('khernandez1c', 'tjordan1c@bandcamp.com', '1956-11-16', '62-(451)578-7713', 'ZXIJlyS');
 insert into Utilizador (UserName, Email, DataNascimento, Telefone, Password, Morada) values ('crice1d', 'pcooper1d@ucla.edu', '1988-07-07', '234-(329)694-5720', 'lrKpkPkSa4ZI', '95 Raven Parkway');
 
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('crice1d', 'smorrisw');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('crice1d', 'jcook11');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('crice1d', 'pcarrolls');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('sfisher18', 'ajacksonx');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('sfisher18', 'ggriffin13');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('jwatkins19', 'jwatsonq');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('jpalmer16', 'ajacksonx');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('jrichards14', 'dhill17');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('bphillipsv', 'hthompsonn');
-insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('cowenso', 'jlawrencer');
-
-
-insert into UtilizadorSegueArtista (UserName, AID) values ('rkelleyj', '58e154b1fc13ae46c7000026');
-insert into UtilizadorSegueArtista (UserName, AID) values ('mmorrisk', '58e154b1fc13ae46c7000026');
-insert into UtilizadorSegueArtista (UserName, AID) values ('bwalkery', '58e154b1fc13ae46c7000025');
-insert into UtilizadorSegueArtista (UserName, AID) values ('aknight15', '58e154b1fc13ae46c7000024');
-insert into UtilizadorSegueArtista (UserName, AID) values ('kperkinsh', '58e154b1fc13ae46c7000021');
-
-
-insert into UtilizadorLocaliza (UserName, CPGeral) values ('rkelleyj', '4430');
-insert into UtilizadorLocaliza (UserName, CPGeral) values ('bwatsont', '6894');
-insert into UtilizadorLocaliza (UserName, CPGeral) values ('kperkinsh', '4430');
-insert into UtilizadorLocaliza (UserName, CPGeral) values ('aknight15', '0012');
-insert into UtilizadorLocaliza (UserName, CPGeral) values ('mmorrisk', '1230');
-
-insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('rkelleyj', '58e15758fc13ae454c00002c');
-insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('aknight15','58e15758fc13ae454c000031');
-insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('bwalkery','58e15758fc13ae454c000032');
-insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('kperkinsh','58e15758fc13ae454c000033');
-insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('cowenso', '58e15758fc13ae454c000034');
-
-insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('rkelleyj', '58e1126969fc13ae494e0001');
-insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('aknight15','58e1126969fc13ae494e0002');
-insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('bwalkery','58e1126969fc13ae494e0004');
-insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('kperkinsh','58e1126969fc13ae494e0006');
-insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('cowenso', '58e1126969fc13ae494e0009');
-
-insert into UtilizadorFavoritaMusica (UserName, MuID) values ('rkelleyj', '58e157d2fc13ae46c7000068');
-insert into UtilizadorFavoritaMusica (UserName, MuID) values ('aknight15','58e157d2fc13ae46c7000069');
-insert into UtilizadorFavoritaMusica (UserName, MuID) values ('bwalkery','58e157d2fc13ae46c7000065');
-insert into UtilizadorFavoritaMusica (UserName, MuID) values ('kperkinsh','58e157d2fc13ae46c7000068');
-insert into UtilizadorFavoritaMusica (UserName, MuID) values ('cowenso', '58e157d2fc13ae46c7000064');
-
-insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('rkelleyj', '58e157d2fc13ae46c7000062', '0100239');
-insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('aknight15','58e157d2fc13ae46c7000061', '11231790');
-insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('bwalkery','58e157d2fc13ae46c7000067', '9010239');
-insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('kperkinsh','58e157d2fc13ae46c7000056', '1023120');
-insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('cowenso', '58e157d2fc13ae46c7000060', '01204957');
-
 
 insert into Genero (GenID, Nome) values ('58e1522ffc13ae454c000000', 'Alternative Rock');
 insert into Genero (GenID, Nome) values ('58e1522ffc13ae454c000001', 'Hip Hop');
@@ -118,6 +69,7 @@ insert into Genero (GenID, Nome) values ('58e1522ffc13ae454c00000d', 'Heavy Meta
 insert into Genero (GenID, Nome) values ('58e1522ffc13ae454c00000e', 'Thrash Metal');
 insert into Genero (GenID, Nome) values ('58e1522ffc13ae454c00000f', 'Comedy Rock');
 
+
 insert into Pais (PaisID, Nome) values ('58e1522ffc13ae231c000000', 'Portugal');
 insert into Pais (PaisID, Nome) values ('58e1522ffc13ae231c000001', 'Inglaterra');
 insert into Pais (PaisID, Nome) values ('58e1522ffc13ae231c000002', 'Estados Unidos');
@@ -128,12 +80,14 @@ insert into Pais (PaisID, Nome) values ('58e1522ffc13ae231c000006', 'Japao');
 insert into Pais (PaisID, Nome) values ('58e1522ffc13ae231c000007', 'China');
 insert into Pais (PaisID, Nome) values ('58e1522ffc13ae231c000008', 'Brasil');
 
+
 insert into Localidade (CPGeral, Nome, PaisID) values ('4430', 'Valadares', '58e1522ffc13ae231c000000');
 insert into Localidade (CPGeral, Nome, PaisID) values ('4325', 'Cambridge', '58e1522ffc13ae231c000001');
 insert into Localidade (CPGeral, Nome, PaisID) values ('1230', 'California', '58e1522ffc13ae231c000002');
 insert into Localidade (CPGeral, Nome, PaisID) values ('7965', 'Barcelona', '58e1522ffc13ae231c000003' );
 insert into Localidade (CPGeral, Nome, PaisID) values ('6894', 'Rio de Janeiro', '58e1522ffc13ae231c000008');
 insert into Localidade (CPGeral, Nome, PaisID) values ('0012', 'Kyoto', '58e1522ffc13ae231c000006' );
+
 
 insert into Publicitario (PID, Nome, Investimento, PaisID) values ('58e15350fc13ae46c7000014', 'Oyoba', 37472, '58e1522ffc13ae231c000000');
 insert into Publicitario (PID, Nome, Investimento, PaisID) values ('58e15350fc13ae46c7000015', 'Yombu', 13174, '58e1522ffc13ae231c000001');
@@ -145,6 +99,7 @@ insert into Publicitario (PID, Nome, Investimento, PaisID) values ('58e15350fc13
 insert into Publicitario (PID, Nome, Investimento, PaisID) values ('58e15350fc13ae46c700001b', 'Oyoba', 96388, '58e1522ffc13ae231c000007');
 insert into Publicitario (PID, Nome, Investimento, PaisID) values ('58e15350fc13ae46c700001c', 'Ntags', 36152, '58e1522ffc13ae231c000008');
 
+
 insert into Publicidade (PbID, Duracao, PID) values ('58e153f3fc13ae45a900000a', 440, '58e15350fc13ae46c7000014');
 insert into Publicidade (PbID, Duracao, PID) values ('58e153f3fc13ae45a900000b', 583, '58e15350fc13ae46c7000015');
 insert into Publicidade (PbID, Duracao, PID) values ('58e153f3fc13ae45a900000c', 903, '58e15350fc13ae46c7000016');
@@ -154,6 +109,7 @@ insert into Publicidade (PbID, Duracao, PID) values ('58e153f3fc13ae45a900000f',
 insert into Publicidade (PbID, Duracao, PID) values ('58e153f3fc13ae45a9000010', 231, '58e15350fc13ae46c700001a');
 insert into Publicidade (PbID, Duracao, PID) values ('58e153f3fc13ae45a9000011', 424, '58e15350fc13ae46c700001b');
 insert into Publicidade (PbID, Duracao, PID) values ('58e153f3fc13ae45a9000012', 667, '58e15350fc13ae46c700001c');
+
 
 insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c700001d', 'Andrew Kelly', 'curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris', '58e1522ffc13ae231c000000');
 insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c700001e', 'Anne Elliott', 'et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui', '58e1522ffc13ae231c000001');
@@ -167,33 +123,16 @@ insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c700
 insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c7000026', 'Metallica', 'Metallica were easily the best, most influential heavy metal band of the 80s and 90s.', '58e1522ffc13ae231c000002');
 insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c7000027', 'Tenacious D', 'Rightfully hailed as "the greatest band on Earth", the supersized acoustic metal/comedy duo Tenacious D was an unlikely sucess story.', '58e1522ffc13ae231c000002');
 insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c7000028', 'Steel Panther', 'Satirically pretending to be a hair metal band that missed its big break in the 80s, Singer Michael Starr, drummer Stix Zadinia, bassist Lexxi Foxxx, and guitarist Satchel hit the club circuit on the Sunset Strip around the turn of the milennium', '58e1522ffc13ae231c000002');
+insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c7000029', 'Avenged Sevenfold', 'Formed in 1998. Best metal band in the world', '58e1522ffc13ae231c000002');
+insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c7000019', 'Brand New', 'metalcore band formed in New York. a bit emo', '58e1522ffc13ae231c000002');
+insert into Artista (AID, Nome, Biografia, PaisID) values ('58e154b1fc13ae46c7000018', 'Every Time I Die', 'thrash metal band from Buffalo. heaviest band out there', '58e1522ffc13ae231c000002');
 
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c700001f', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000024', '58e154b1fc13ae46c7000021');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000025', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c700001e');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000025');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000020', '58e154b1fc13ae46c7000021');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000019', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c7000018');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
-insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
-
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000023');
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c700001f', '58e154b1fc13ae46c7000023');
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c7000021');
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c700001e');
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c700001f', '58e154b1fc13ae46c700001e');
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
-insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
 
 insert into Pagamento (Forma) values ('gratuito');
 insert into Pagamento (Forma) values ('CartaoCredito');
 insert into Pagamento (Forma) values ('Paypal');
 insert into Pagamento (Forma) values ('PaysafeCard');
+
 
 insert into TipoConta (PrecoMensal) values ('0.0');
 insert into TipoConta (PrecoMensal) values ('6.99');
@@ -281,6 +220,12 @@ insert into Musica (MuID, Nome, Duracao) values ('58e157d2fc13ae46c7000083', 'Th
 insert into Musica (MuID, Nome, Duracao) values ('58e157d2fc13ae46c7000084', '17 Girls In a Row', 543);
 insert into Musica (MuID, Nome, Duracao) values ('58e157d2fc13ae46c7000085', 'if You Really Really Love Me', 356);
 
+
+insert into Tipo (TipoID, Nome) values ('58f266a9e0000', 'Studio');
+insert into Tipo (TipoID, Nome) values ('58f266a9e0001', 'Compilation');
+insert into Tipo (TipoID, Nome) values ('58f266a9e0002', 'Soundtrack');
+insert into Tipo (TipoID, Nome) values ('58f266a9e0003', 'Live');
+
 insert into Album (AbID, Nome, Ano, TipoID) values ('58e1126969fc13ae494e0001', 'Hardwired...To Self-Destruct', 2016, '58f266a9e0000');
 insert into Album (AbID, Nome, Ano, TipoID) values ('58e1126969fc13ae494e0002', 'Metallica', 1991, '58f266a9e0000');
 insert into Album (AbID, Nome, Ano, TipoID) values ('58e1126969fc13ae494e0003', 'Master Of Puppets', 1986, '58f266a9e0000');
@@ -293,10 +238,84 @@ insert into Album (AbID, Nome, Ano, TipoID) values ('58e1126969fc13ae494e0009', 
 insert into Album (AbID, Nome, Ano, TipoID) values ('58e1126969fc13ae494e000a', 'Balls Out', 2011, '58f266a9e0003');
 insert into Album (AbID, Nome, Ano, TipoID) values ('58e1126969fc13ae494e000b', 'All You Can Eat', 2013, '58f266a9e0001');
 
-insert into Tipo (TipoID, Nome) values ('58f266a9e0000', 'Studio');
-insert into Tipo (TipoID, Nome) values ('58f266a9e0001', 'Compilação');
-insert into Tipo (TipoID, Nome) values ('58f266a9e0002', 'Soundtrack');
-insert into Tipo (TipoID, Nome) values ('58f266a9e0003', 'Live');
+
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('crice1d', 'smorrisw');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('crice1d', 'jcook11');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('crice1d', 'pcarrolls');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('sfisher18', 'ajacksonx');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('sfisher18', 'ggriffin13');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('jwatkins19', 'jwatsonq');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('jpalmer16', 'ajacksonx');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('jrichards14', 'dhill17');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('bphillipsv', 'hthompsonn');
+insert into UtilizadorSegueUtilizador (UserName1, UserName2) values ('cowenso', 'jlawrencer');
+
+
+insert into UtilizadorSegueArtista (UserName, AID) values ('rkelleyj', '58e154b1fc13ae46c7000026');
+insert into UtilizadorSegueArtista (UserName, AID) values ('mmorrisk', '58e154b1fc13ae46c7000026');
+insert into UtilizadorSegueArtista (UserName, AID) values ('bwalkery', '58e154b1fc13ae46c7000025');
+insert into UtilizadorSegueArtista (UserName, AID) values ('aknight15', '58e154b1fc13ae46c7000024');
+insert into UtilizadorSegueArtista (UserName, AID) values ('kperkinsh', '58e154b1fc13ae46c7000021');
+
+
+insert into UtilizadorLocaliza (UserName, CPGeral) values ('rkelleyj', '4430');
+insert into UtilizadorLocaliza (UserName, CPGeral) values ('bwatsont', '6894');
+insert into UtilizadorLocaliza (UserName, CPGeral) values ('kperkinsh', '4430');
+insert into UtilizadorLocaliza (UserName, CPGeral) values ('aknight15', '0012');
+insert into UtilizadorLocaliza (UserName, CPGeral) values ('mmorrisk', '1230');
+
+
+insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('rkelleyj', '58e15758fc13ae454c00002c');
+insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('aknight15','58e15758fc13ae454c000031');
+insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('bwalkery','58e15758fc13ae454c000032');
+insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('kperkinsh','58e15758fc13ae454c000033');
+insert into UtilizadorGuardaPlaylist (UserName, PLID) values ('cowenso', '58e15758fc13ae454c000034');
+
+
+insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('rkelleyj', '58e1126969fc13ae494e0001');
+insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('aknight15','58e1126969fc13ae494e0002');
+insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('bwalkery','58e1126969fc13ae494e0004');
+insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('kperkinsh','58e1126969fc13ae494e0006');
+insert into UtilizadorFavoritaAlbum (UserName, AbID) values ('cowenso', '58e1126969fc13ae494e0009');
+
+
+insert into UtilizadorFavoritaMusica (UserName, MuID) values ('rkelleyj', '58e157d2fc13ae46c7000068');
+insert into UtilizadorFavoritaMusica (UserName, MuID) values ('aknight15','58e157d2fc13ae46c7000069');
+insert into UtilizadorFavoritaMusica (UserName, MuID) values ('bwalkery','58e157d2fc13ae46c7000065');
+insert into UtilizadorFavoritaMusica (UserName, MuID) values ('kperkinsh','58e157d2fc13ae46c7000068');
+insert into UtilizadorFavoritaMusica (UserName, MuID) values ('cowenso', '58e157d2fc13ae46c7000064');
+
+
+insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('rkelleyj', '58e157d2fc13ae46c7000062', '0100239');
+insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('aknight15','58e157d2fc13ae46c7000061', '11231790');
+insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('bwalkery','58e157d2fc13ae46c7000067', '9010239');
+insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('kperkinsh','58e157d2fc13ae46c7000056', '1023120');
+insert into UtilizadorOuveMusica (UserName, MuID, Time_Stamp) values ('cowenso', '58e157d2fc13ae46c7000060', '01204957');
+
+
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000023');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c700001f', '58e154b1fc13ae46c7000023');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000024', '58e154b1fc13ae46c7000021');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000025', '58e154b1fc13ae46c7000023');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c700001e');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000025');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000020', '58e154b1fc13ae46c7000021');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000019', '58e154b1fc13ae46c7000023');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c7000018');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
+insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
+
+
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000023');
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c700001f', '58e154b1fc13ae46c7000023');
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c7000021');
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c700001e');
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c700001f', '58e154b1fc13ae46c700001e');
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
+insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
+
 
 insert into AlbumGenero (AbID, GenID) values ('58e1126969fc13ae494e0001', '58e1522ffc13ae454c00000e');
 insert into AlbumGenero (AbID, GenID) values ('58e1126969fc13ae494e0002', '58e1522ffc13ae454c00000d');
@@ -310,9 +329,11 @@ insert into AlbumGenero (AbID, GenID) values ('58e1126969fc13ae494e0009', '58e15
 insert into AlbumGenero (AbID, GenID) values ('58e1126969fc13ae494e000a', '58e1522ffc13ae454c00000e');
 insert into AlbumGenero (AbID, GenID) values ('58e1126969fc13ae494e000b', '58e1522ffc13ae454c00000e');
 
+
 insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
 insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
 insert into ArtistaRelacionaArtista (AID1, AID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
+
 
 insert into AlbumRelacionaAlbum (AbID1, AbID2) values ('58e1126969fc13ae494e0001', '58e1126969fc13ae494e0002');
 insert into AlbumRelacionaAlbum (AbID1, AbID2) values ('58e1126969fc13ae494e0007', '58e1126969fc13ae494e0007');
@@ -321,6 +342,7 @@ insert into AlbumRelacionaAlbum (AbID1, AbID2) values ('58e1126969fc13ae494e0006
 insert into AlbumRelacionaAlbum (AbID1, AbID2) values ('58e1126969fc13ae494e0001', '58e1126969fc13ae494e0005');
 insert into AlbumRelacionaAlbum (AbID1, AbID2) values ('58e1126969fc13ae494e0002', '58e1126969fc13ae494e0003');
 insert into AlbumRelacionaAlbum (AbID1, AbID2) values ('58e1126969fc13ae494e0004', '58e1126969fc13ae494e0005');
+
 
 insert into MusicaAlbumArtista (MuID, AbID, AID) values ('58e157d2fc13ae46c7000061','58e1126969fc13ae494e0001', '58e154b1fc13ae46c7000026');
 insert into MusicaAlbumArtista (MuID, AbID, AID) values ('58e157d2fc13ae46c7000067','58e1126969fc13ae494e0003', '58e154b1fc13ae46c7000026');
@@ -335,12 +357,14 @@ insert into MusicaAlbumArtista (MuID, AbID, AID) values ('58e157d2fc13ae46c70000
 insert into MusicaAlbumArtista (MuID, AbID, AID) values ('58e157d2fc13ae46c700006d','58e1126969fc13ae494e000b', '58e154b1fc13ae46c7000028');
 insert into MusicaAlbumArtista (MuID, AbID, AID) values ('58e157d2fc13ae46c7000080','58e1126969fc13ae494e0009', '58e154b1fc13ae46c7000028');
 
+
 insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000020', '58e154b1fc13ae46c7000021');
 insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000019', '58e154b1fc13ae46c7000023');
 insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c7000018');
 insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
 insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
 insert into ArtistaSegueArtista (AID1, AID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
+
 
 insert into PlaylistGuardaMusica (PLID, MuID) values('58e15758fc13ae454c000031','58e157d2fc13ae46c7000061');
 insert into PlaylistGuardaMusica (PLID, MuID) values('58e15758fc13ae454c000031','58e157d2fc13ae46c7000062');
