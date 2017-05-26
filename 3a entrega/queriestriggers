@@ -30,10 +30,11 @@ Queries:
 
     quais os utlizadores que gostam de todos os albuns de um Artista
 
-    
+
 
 Triggers:
 
 1. Não criar uma música que tenha mais de 2 horas de duração
 2. Não criar albuns de tipos diferentes com o mesmo nome, de um dado artista
-3.
+3. Ao guardar uma playlist fica-se a seguir esse Utilizador
+4. 

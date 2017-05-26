@@ -118,7 +118,9 @@ create table Localidade (
 drop table if exists Playlist;
 create table Playlist (
   plID BLOB PRIMARY KEY,
-  nome VARCHAR(255) DEFAULT 'plID'
+  nome VARCHAR(255) DEFAULT 'plID',
+  criador VARCHAR(20),
+  FOREIGN KEY (criador) REFERENCES Utilizador(criador)
 );
 
 drop table if exists PlaylistGuardaMusica;
