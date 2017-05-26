@@ -30,11 +30,12 @@ Queries:
 
     quais os utlizadores que gostam de todos os albuns de um Artista
 
+    Listar musicas que apareçam em mais de 3 albuns
+
 
 
 Triggers:
 
-1. Não criar uma música que tenha mais de 2 horas de duração
-2. Não criar albuns de tipos diferentes com o mesmo nome, de um dado artista
 3. Ao guardar uma playlist fica-se a seguir esse Utilizador
-4. 
+3. Se for a data de nascimento do gajo incrementar o mes de fim da conta um mes sem alterar o preço
+1. Username ouve playlist, sabendo o criador da playlist sabemos as musicas favoritas do criador e recomenda ditas musicas para a playlist Username ouve playlist, sabendo o criador da playlist sabemos as musicas favoritas do criador e recomenda ditas musicas para a playlist.
