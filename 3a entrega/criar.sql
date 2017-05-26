@@ -31,15 +31,6 @@ create table ArtistaRelacionaArtista (
   FOREIGN KEY (aID2) REFERENCES Artista(aID)
 );
 
-drop table if exists ArtistaSegueArtista;
-create table ArtistaSegueArtista (
-  aID1 BLOB,
-  aID2 BLOB,
-  PRIMARY KEY (aID1, aID2),
-  FOREIGN KEY (aID1) REFERENCES Artista(aID),
-  FOREIGN KEY (aID2) REFERENCES Artista(aID)
-);
-
 drop table if exists UtilizadorLocaliza;
 create table UtilizadorLocaliza (
   username VARCHAR(20),

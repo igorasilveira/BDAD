@@ -9,7 +9,7 @@ insert into Pais (paisID, nome) values ('58e1522ffc13ae231c000005', 'Hungria');
 insert into Pais (paisID, nome) values ('58e1522ffc13ae231c000006', 'Japao');
 insert into Pais (paisID, nome) values ('58e1522ffc13ae231c000007', 'China');
 insert into Pais (paisID, nome) values ('58e1522ffc13ae231c000008', 'Brasil');
-  
+
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('rfox0', 'joliver0@yandex.ru', '1998-05-18', '351-(802)416-0564', 'cL9sYi', '3909 Cardinal Street', '58e1522ffc13ae231c000000');
 insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('ahernandez1', 'bgonzalez1@berkeley.edu', '1984-10-15', '33-(209)576-3128', 'LYytMaFcdOfq', '58e1522ffc13ae231c000001');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('dwheeler2', 'sjacobs2@adobe.com', '1974-06-09', '7-(152)392-1188', 'W4OMmOIX', '32 Sommers Park', '58e1522ffc13ae231c000002');
@@ -289,20 +289,6 @@ insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('aknight15
 insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('bwalkery','58e157d2fc13ae46c7000067', '9010239');
 insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('kperkinsh','58e157d2fc13ae46c7000056', '1023120');
 insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('cowenso', '58e157d2fc13ae46c7000060', '01204957');
-
-
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c700001f', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000024', '58e154b1fc13ae46c7000021');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000025', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c700001e');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000025');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000020', '58e154b1fc13ae46c7000021');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000019', '58e154b1fc13ae46c7000023');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000022', '58e154b1fc13ae46c7000018');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000027');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000026', '58e154b1fc13ae46c7000028');
-insert into ArtistaSegueArtista (aID1, aID2) values ('58e154b1fc13ae46c7000027', '58e154b1fc13ae46c7000028');
 
 
 insert into ArtistaRelacionaArtista (aID1, aID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000023');
