@@ -11,8 +11,8 @@ create table Utilizador (
   morada VARCHAR(255) DEFAULT 'N/D',
   paisID BLOB,
   cpGeral CHAR(4) DEFAULT '0000',
-  FOREIGN KEY (paisID) REFERENCES Pais(paisID),
-  FOREIGN KEY (cpGeral) REFERENCES Localidade(cpGeral)
+  FOREIGN KEY (paisID) REFERENCES Pais(paisID) ON DELETE SET NULL ON UPDATE CASCADE,
+  FOREIGN KEY (cpGeral) REFERENCES Localidade(cpGeral) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 drop table if exists UtilizadorSegueUtilizador;
@@ -20,8 +20,8 @@ create table UtilizadorSegueUtilizador (
   username1 VARCHAR(20),
   username2 VARCHAR(20),
   PRIMARY KEY (username1, username2),
-  FOREIGN KEY (username1) REFERENCES Utilizador(username),
-  FOREIGN KEY (username2) REFERENCES Utilizador(username)
+  FOREIGN KEY (username1) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (username2) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists ArtistaRelacionaArtista;
@@ -29,8 +29,8 @@ create table ArtistaRelacionaArtista (
   aID1 BLOB,
   aID2 BLOB,
   PRIMARY KEY (aID1, aID2),
-  FOREIGN KEY (aID1) REFERENCES Artista(aID),
-  FOREIGN KEY (aID2) REFERENCES Artista(aID)
+  FOREIGN KEY (aID1) REFERENCES Artista(aID) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (aID2) REFERENCES Artista(aID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists UtilizadorGuardaPlaylist;
@@ -38,8 +38,8 @@ create table UtilizadorGuardaPlaylist (
   username VARCHAR(20),
   plID INT,
   PRIMARY KEY (username, plID),
-  FOREIGN KEY (username) REFERENCES Utilizador(username),
-  FOREIGN KEY (plID) REFERENCES Playlist(plID)
+  FOREIGN KEY (username) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (plID) REFERENCES Playlist(plID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists UtilizadorFavoritaMusica;
@@ -47,8 +47,8 @@ create table UtilizadorFavoritaMusica (
   username VARCHAR(20),
   muID INT,
   PRIMARY KEY (username, muID),
-  FOREIGN KEY (username) REFERENCES Utilizador(username),
-  FOREIGN KEY (muID) REFERENCES Musica(muID)
+  FOREIGN KEY (username) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (muID) REFERENCES Musica(muID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists UtilizadorOuveMusica;
@@ -57,8 +57,8 @@ create table UtilizadorOuveMusica (
   muID INT,
   time_stamp DATE NOT NULL,
   PRIMARY KEY (username, muID, time_stamp),
-  FOREIGN KEY (username) REFERENCES Utilizador(username),
-  FOREIGN KEY (muID) REFERENCES Musica(muID)
+  FOREIGN KEY (username) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (muID) REFERENCES Musica(muID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists UtilizadorFavoritaAlbum;
@@ -66,8 +66,8 @@ create table UtilizadorFavoritaAlbum (
   username VARCHAR(20),
   abID INT,
   PRIMARY KEY (username, abID),
-  FOREIGN KEY (username) REFERENCES Utilizador(username),
-  FOREIGN KEY (abID) REFERENCES Album(abID)
+  FOREIGN KEY (username) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (abID) REFERENCES Album(abID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists UtilizadorSegueArtista;
@@ -75,8 +75,8 @@ create table UtilizadorSegueArtista (
   username VARCHAR(20),
   aID BLOB,
   PRIMARY KEY (username, aID),
-  FOREIGN KEY (username) REFERENCES Utilizador(username),
-  FOREIGN KEY (aID) REFERENCES Artista(aID)
+  FOREIGN KEY (username) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (aID) REFERENCES Artista(aID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists Conta;
@@ -84,9 +84,9 @@ create table Conta (
   cID INT PRIMARY KEY,
   dataInicio DATE NOT NULL,
   dataFim DATE NOT NULL CHECK(dataInicio<dataFim),
-  utilizador VARCHAR(20) NOT NULL REFERENCES Utilizador(username),
-  pagamento VARCHAR(13) NOT NULL REFERENCES pagamento CHECK(pagamento in ('gratuito', 'CartaoCredito', 'Paypal', 'PaysafeCard')),
-  tipoConta VARCHAR(8) NOT NULL REFERENCES TipoConta CHECK(tipoConta in ('0.0', '6.99', '10.99'))
+  utilizador VARCHAR(20) NOT NULL REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE,
+  pagamento VARCHAR(13) NOT NULL REFERENCES pagamento ON DELETE CASCADE ON UPDATE CASCADE CHECK(pagamento in ('gratuito', 'CartaoCredito', 'Paypal', 'PaysafeCard')),
+  tipoConta VARCHAR(8) NOT NULL REFERENCES TipoConta ON DELETE CASCADE ON UPDATE CASCADE CHECK(tipoConta in ('0.0', '6.99', '10.99'))
 );
 
 drop table if exists Pagamento;
@@ -110,7 +110,7 @@ create table Playlist (
   plID INT PRIMARY KEY,
   nome VARCHAR(255) DEFAULT 'playme',
   criador VARCHAR(20),
-  FOREIGN KEY (criador) REFERENCES Utilizador(username)
+  FOREIGN KEY (criador) REFERENCES Utilizador(username) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists PlaylistGuardaMusica;
@@ -118,8 +118,8 @@ create table PlaylistGuardaMusica (
   plID BLOB,
   muID BLOB,
   PRIMARY KEY (plID, muID),
-  FOREIGN KEY (plID) REFERENCES Playlist(plID),
-  FOREIGN KEY (muID) REFERENCES Musica(muID)
+  FOREIGN KEY (plID) REFERENCES Playlist(plID) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (muID) REFERENCES Musica(muID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists Musica;
@@ -134,7 +134,7 @@ create table Album (
   abID INT PRIMARY KEY,
   nome VARCHAR(255) NOT NULL,
   ano INT NOT NULL CHECK(Ano>1900),
-  tipoID INT NOT NULL CHECK(tipoID > 0) REFERENCES Tipo(tipoID),
+  tipoID INT NOT NULL CHECK(tipoID > 0) REFERENCES Tipo(tipoID) ON DELETE SET NULL ON UPDATE CASCADE,
   FOREIGN KEY (tipoID) REFERENCES Tipo(tipoID)
 );
 
@@ -143,8 +143,8 @@ create table AlbumRelacionaAlbum (
   abID1 BLOB,
   abID2 BLOB,
   PRIMARY KEY (abID1, abID2),
-  FOREIGN KEY (abID1) REFERENCES Album(abID),
-  FOREIGN KEY (abID2) REFERENCES Album(abID)
+  FOREIGN KEY (abID1) REFERENCES Album(abID) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (abID2) REFERENCES Album(abID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists AlbumGenero;
@@ -152,8 +152,8 @@ create table AlbumGenero (
   abID BLOB,
   genID BLOB,
   PRIMARY KEY (abID, genID),
-  FOREIGN KEY (abID) REFERENCES Album(abID),
-  FOREIGN KEY (genID) REFERENCES Genero(genID)
+  FOREIGN KEY (abID) REFERENCES Album(abID) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (genID) REFERENCES Genero(genID) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 drop table if exists Artista;
@@ -161,7 +161,7 @@ create table Artista (
   aID INT PRIMARY KEY,
   nome VARCHAR(255) NOT NULL,
   biografia VARCHAR(255) DEFAULT 'Sem Informacao',
-  paisID BLOB NOT NULL CHECK(paisID>0) REFERENCES pais(paisID),
+  paisID BLOB NOT NULL CHECK(paisID>0) REFERENCES pais(paisID) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (paisID) REFERENCES Pais(paisID)
 );
 
@@ -171,9 +171,9 @@ create table MusicaAlbumArtista (
   abID BLOB,
   aID BLOB,
   PRIMARY KEY (muID, abID, aID),
-  FOREIGN KEY (aID) REFERENCES Artista(aID),
-  FOREIGN KEY (abID) REFERENCES Album(abID),
-  FOREIGN KEY (muID) REFERENCES Musica(muID)
+  FOREIGN KEY (aID) REFERENCES Artista(aID) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (abID) REFERENCES Album(abID) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (muID) REFERENCES Musica(muID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists Publicitario;
@@ -182,7 +182,7 @@ create table Publicitario (
   nome VARCHAR(255) NOT NULL,
   investimento INT NOT NULL CHECK(investimento>0),
   paisID BLOB NOT NULL CHECK(paisID>0) REFERENCES Pais(paisID),
-  FOREIGN KEY (paisID) REFERENCES Pais(paisID)
+  FOREIGN KEY (paisID) REFERENCES Pais(paisID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 drop table if exists Publicidade;
@@ -190,7 +190,7 @@ create table Publicidade (
   pbID INT PRIMARY KEY,
   duracao INTEGER NOT NULL CHECK(duracao>0),
   pID BLOB NOT NULL,
-  FOREIGN KEY (pID) REFERENCES Publicitario(pID)
+  FOREIGN KEY (pID) REFERENCES Publicitario(pID) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 drop table if exists Pais;
