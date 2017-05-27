@@ -120,7 +120,7 @@ create table Playlist (
   plID BLOB PRIMARY KEY,
   nome VARCHAR(255) DEFAULT 'plID',
   criador VARCHAR(20),
-  FOREIGN KEY (criador) REFERENCES Utilizador(criador)
+  FOREIGN KEY (criador) REFERENCES Utilizador(username)
 );
 
 drop table if exists PlaylistGuardaMusica;
