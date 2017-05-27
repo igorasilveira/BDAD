@@ -11,6 +11,15 @@ insert into Pais (nome) values ('China');
 insert into Pais (nome) values ('Brasil');
 
 
+insert into Localidade (codigoPostal, nome) values ('0000', 'Unknown');
+insert into Localidade (codigoPostal, nome) values ('4430', 'Valadares');
+insert into Localidade (codigoPostal, nome) values ('4325', 'Cambridge');
+insert into Localidade (codigoPostal, nome) values ('1230', 'California');
+insert into Localidade (codigoPostal, nome) values ('7965', 'Barcelona');
+insert into Localidade (codigoPostal, nome) values ('6894', 'Rio de Janeiro');
+insert into Localidade (codigoPostal, nome) values ('0012', 'Kyoto');
+    
+
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('rfox0', 'joliver0@yandex.ru', '1998-05-18', '351-(802)416-0564', 'cL9sYi', '4430', '3909 Cardinal Street', 1);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, paisID) values ('ahernandez1', 'bgonzalez1@berkeley.edu', '1984-10-15', '33-(209)576-3128', 'LYytMaFcdOfq', '4430', 2);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('dwheeler2', 'sjacobs2@adobe.com', '1974-06-09', '7-(152)392-1188', 'W4OMmOIX', '4430', '32 Sommers Park', 3);
@@ -79,15 +88,6 @@ insert into GeneroMusical (nome) values ('Electronic');
 insert into GeneroMusical (nome) values ('Heavy Metal');
 insert into GeneroMusical (nome) values ('Thrash Metal');
 insert into GeneroMusical (nome) values ('Comedy Rock');
-
-
-insert into Localidade (codigoPostal, nome) values ('0000', 'Unknown');
-insert into Localidade (codigoPostal, nome) values ('4430', 'Valadares');
-insert into Localidade (codigoPostal, nome) values ('4325', 'Cambridge');
-insert into Localidade (codigoPostal, nome) values ('1230', 'California');
-insert into Localidade (codigoPostal, nome) values ('7965', 'Barcelona');
-insert into Localidade (codigoPostal, nome) values ('6894', 'Rio de Janeiro');
-insert into Localidade (codigoPostal, nome) values ('0012', 'Kyoto');
 
 
 insert into Publicitario (nome, investimento, paisID) values ('Oyoba', 37472, 1);
