@@ -285,11 +285,11 @@ insert into UtilizadorFavoritaMusica (username, muID) values ('kperkinsh','58e15
 insert into UtilizadorFavoritaMusica (username, muID) values ('cowenso', '58e157d2fc13ae46c7000064');
 
 
-insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('rkelleyj', '58e157d2fc13ae46c7000062', '0100239');
-insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('aknight15','58e157d2fc13ae46c7000061', '11231790');
-insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('bwalkery','58e157d2fc13ae46c7000067', '9010239');
-insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('kperkinsh','58e157d2fc13ae46c7000056', '1023120');
-insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('cowenso', '58e157d2fc13ae46c7000060', '01204957');
+insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('rkelleyj', '58e157d2fc13ae46c7000062', '2017-05-27 19:10:05.100');
+insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('aknight15','58e157d2fc13ae46c7000061', '2017-05-27 07:10:31.100');
+insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('bwalkery','58e157d2fc13ae46c7000067', '2017-05-28 15:10:45.100');
+insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('kperkinsh','58e157d2fc13ae46c7000056', '2017-06-06 03:10:25.100');
+insert into UtilizadorOuveMusica (username, muID, time_stamp) values ('cowenso', '58e157d2fc13ae46c7000060', '2017-05-31 23:10:12.100');
 
 
 insert into ArtistaRelacionaArtista (aID1, aID2) values ('58e154b1fc13ae46c700001d', '58e154b1fc13ae46c7000023');

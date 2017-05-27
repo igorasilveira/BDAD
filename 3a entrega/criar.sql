@@ -62,7 +62,7 @@ drop table if exists UtilizadorOuveMusica;
 create table UtilizadorOuveMusica (
   username VARCHAR(20),
   muID INT,
-  time_stamp VARCHAR(255) NOT NULL,
+  time_stamp DATE NOT NULL,
   PRIMARY KEY (username, muID, time_stamp),
   FOREIGN KEY (username) REFERENCES Utilizador(username),
   FOREIGN KEY (muID) REFERENCES Musica(muID)
