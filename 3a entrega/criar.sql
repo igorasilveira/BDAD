@@ -82,7 +82,6 @@ create table UtilizadorSegueArtista (
 drop table if exists Conta;
 create table Conta (
   cID INT PRIMARY KEY,
-  preco FLOAT NOT NULL CHECK(preco>=0),
   dataInicio DATE NOT NULL,
   dataFim DATE NOT NULL CHECK(dataInicio<dataFim),
   utilizador VARCHAR(20) NOT NULL REFERENCES Utilizador(username),
