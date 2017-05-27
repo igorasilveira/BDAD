@@ -10,6 +10,16 @@ insert into Pais (paisID, nome) values ('58e1522ffc13ae231c000006', 'Japao');
 insert into Pais (paisID, nome) values ('58e1522ffc13ae231c000007', 'China');
 insert into Pais (paisID, nome) values ('58e1522ffc13ae231c000008', 'Brasil');
 
+
+insert into Localidade (cpGeral, nome) values ('0000', 'Unknown');
+insert into Localidade (cpGeral, nome) values ('4430', 'Valadares');
+insert into Localidade (cpGeral, nome) values ('4325', 'Cambridge');
+insert into Localidade (cpGeral, nome) values ('1230', 'California');
+insert into Localidade (cpGeral, nome) values ('7965', 'Barcelona');
+insert into Localidade (cpGeral, nome) values ('6894', 'Rio de Janeiro');
+insert into Localidade (cpGeral, nome) values ('0012', 'Kyoto');
+
+
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('rfox0', 'joliver0@yandex.ru', '1998-05-18', '351-(802)416-0564', 'cL9sYi', '3909 Cardinal Street', '58e1522ffc13ae231c000000');
 insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('ahernandez1', 'bgonzalez1@berkeley.edu', '1984-10-15', '33-(209)576-3128', 'LYytMaFcdOfq', '58e1522ffc13ae231c000001');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('dwheeler2', 'sjacobs2@adobe.com', '1974-06-09', '7-(152)392-1188', 'W4OMmOIX', '32 Sommers Park', '58e1522ffc13ae231c000002');
@@ -27,10 +37,10 @@ insert into Utilizador (username, email, dataNascimento, telefone, password, mor
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('jrodrigueze', 'lmartineze@yahoo.com', '1968-05-26', '33-(825)690-5009', 'yzgDVlqtJM4g', '701 Hagan Alley', '58e1522ffc13ae231c000007');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('pwebbf', 'dbakerf@fema.gov', '1996-07-20', '33-(281)159-1971', 'QGnoNS', '68 Leroy Way', '58e1522ffc13ae231c000006');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('redwardsg', 'cmedinag@toplist.cz', '2014-08-10', '86-(126)559-2232', 'vOymZ5AvK', '6 Fuller Park', '58e1522ffc13ae231c000005');
-insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('kperkinsh', 'aburtonh@dell.com', '2015-01-08', '502-(358)477-5751', 'fq6jObg', '3 Scott Place', '58e1522ffc13ae231c000004');
+insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID, cpGeral) values ('kperkinsh', 'aburtonh@dell.com', '2015-01-08', '502-(358)477-5751', 'fq6jObg', '3 Scott Place', '58e1522ffc13ae231c000004', '4430');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('aryani', 'tfieldsi@godaddy.com', '1993-05-21', '48-(108)646-5963', 'vGCt1ZLi', '275 Eagan Park', '58e1522ffc13ae231c000001');
-insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('rkelleyj', 'jgonzalezj@cmu.edu', '2000-11-02', '86-(784)704-7180', 'oCUzPa', '284 Maryland Road', '58e1522ffc13ae231c000000');
-insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('mmorrisk', 'kporterk@alexa.com', '2013-06-09', '595-(321)123-8681', 'PsrnW5R', '39 Chinook Hill', '58e1522ffc13ae231c000005');
+insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID, cpGeral) values ('rkelleyj', 'jgonzalezj@cmu.edu', '2000-11-02', '86-(784)704-7180', 'oCUzPa', '284 Maryland Road', '58e1522ffc13ae231c000000', '4430');
+insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID, cpGeral) values ('mmorrisk', 'kporterk@alexa.com', '2013-06-09', '595-(321)123-8681', 'PsrnW5R', '39 Chinook Hill', '58e1522ffc13ae231c000005', '1230');
 insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('rgordonl', 'bwagnerl@squidoo.com', '2003-02-06', '234-(195)864-8323', 'VKZO2YI', '58e1522ffc13ae231c000003');
 insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('cmasonm', 'pwoodm@mozilla.org', '1976-03-12', '55-(435)847-1649', 'fghTnak', '58e1522ffc13ae231c000007');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('hthompsonn', 'crayn@eepurl.com', '1962-10-01', '86-(759)681-8128', 'NrnKVbqfm', '2927 Tomscot Court', '58e1522ffc13ae231c000004');
@@ -39,7 +49,7 @@ insert into Utilizador (username, email, dataNascimento, telefone, password, mor
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('jwatsonq', 'jwatsonq@printfriendly.com', '1980-07-04', '358-(858)847-9215', 'pALnolxfNr2', '35277 Crescent Oaks Plaza', '58e1522ffc13ae231c000000');
 insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('jlawrencer', 'sfloresr@ted.com', '1957-05-12', '63-(214)188-6501', 'GSeUqephhbF', '58e1522ffc13ae231c000006');
 insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('pcarrolls', 'ewhites@howstuffworks.com', '1970-06-17', '86-(126)263-9764', '5JIwhCg', '58e1522ffc13ae231c000007');
-insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('bwatsont', 'rclarkt@oakley.com', '1955-12-24', '380-(369)428-5684', 'jlKj4oxyVcZ', '58e1522ffc13ae231c000008');
+insert into Utilizador (username, email, dataNascimento, telefone, password, paisID, cpGeral) values ('bwatsont', 'rclarkt@oakley.com', '1955-12-24', '380-(369)428-5684', 'jlKj4oxyVcZ', '58e1522ffc13ae231c000008', '6894');
 insert into Utilizador (username, email, dataNascimento, telefone, password, paisID) values ('tlynchu', 'mcarpenteru@delicious.com', '1995-03-25', '94-(827)381-7566', 'hRJpWuV', '58e1522ffc13ae231c000003');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('bphillipsv', 'priverav@stumbleupon.com', '1959-03-09', '505-(304)849-1892', 'MphvSNuMZm0', '0728 Schmedeman Terrace', '58e1522ffc13ae231c000001');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('smorrisw', 'rmeyerw@vistaprint.com', '1994-06-10', '230-(900)445-7864', 'XGRXWUVrW1L', '2 Talisman Park', '58e1522ffc13ae231c000000');
@@ -51,7 +61,7 @@ insert into Utilizador (username, email, dataNascimento, telefone, password, mor
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('chamilton12', 'psimpson12@photobucket.com', '2013-05-28', '7-(431)315-7003', '9sy1ze9chDLr', '3867 Caliangt Alley', '58e1522ffc13ae231c000003');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('ggriffin13', 'aberry13@nyu.edu', '1966-11-26', '505-(215)914-7403', '4neykkkqpeM', '93637 Northfield Pass', '58e1522ffc13ae231c000006');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('jrichards14', 'nstephens14@independent.co.uk', '2001-10-25', '62-(401)362-2035', '9uTMbyLsiV', '4511 Dayton Road', '58e1522ffc13ae231c000007');
-insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('aknight15', 'csimpson15@earthlink.net', '1981-03-05', '36-(891)746-5977', 'CnJK28LiGEiz', '1228 Roth Circle', '58e1522ffc13ae231c000008');
+insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID, cpGeral) values ('aknight15', 'csimpson15@earthlink.net', '1981-03-05', '36-(891)746-5977', 'CnJK28LiGEiz', '1228 Roth Circle', '58e1522ffc13ae231c000008', '0012');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('jpalmer16', 'jhunter16@google.com', '1976-12-12', '46-(828)539-5781', 'dIvP9CTQQT', '96 Waywood Junction', '58e1522ffc13ae231c000008');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('dhill17', 'sbryant17@miitbeian.gov.cn', '1956-12-05', '86-(474)657-1155', 'tCAC2Pj', '28174 Fordem Court', '58e1522ffc13ae231c000003');
 insert into Utilizador (username, email, dataNascimento, telefone, password, morada, paisID) values ('sfisher18', 'mmyers18@geocities.com', '1990-07-25', '62-(341)885-5091', 'jjaUGZuF1AgR', '38 Maple Wood Junction', '58e1522ffc13ae231c000004');
@@ -78,13 +88,6 @@ insert into Genero (genID, nome) values ('58e1522ffc13ae454c00000c', 'Electronic
 insert into Genero (genID, nome) values ('58e1522ffc13ae454c00000d', 'Heavy Metal');
 insert into Genero (genID, nome) values ('58e1522ffc13ae454c00000e', 'Thrash Metal');
 insert into Genero (genID, nome) values ('58e1522ffc13ae454c00000f', 'Comedy Rock');
-
-insert into Localidade (cpGeral, nome, paisID) values ('4430', 'Valadares', '58e1522ffc13ae231c000000');
-insert into Localidade (cpGeral, nome, paisID) values ('4325', 'Cambridge', '58e1522ffc13ae231c000001');
-insert into Localidade (cpGeral, nome, paisID) values ('1230', 'California', '58e1522ffc13ae231c000002');
-insert into Localidade (cpGeral, nome, paisID) values ('7965', 'Barcelona', '58e1522ffc13ae231c000003' );
-insert into Localidade (cpGeral, nome, paisID) values ('6894', 'Rio de Janeiro', '58e1522ffc13ae231c000008');
-insert into Localidade (cpGeral, nome, paisID) values ('0012', 'Kyoto', '58e1522ffc13ae231c000006' );
 
 
 insert into Publicitario (pID, nome, investimento, paisID) values ('58e15350fc13ae46c7000014', 'Oyoba', 37472, '58e1522ffc13ae231c000000');
@@ -136,6 +139,7 @@ insert into TipoConta (precoMensal) values ('0.0');
 insert into TipoConta (precoMensal) values ('6.99');
 insert into TipoConta (precoMensal) values ('10.99');
 
+
 insert into Playlist (plID, nome, criador) values ('58e15758fc13ae454c00001e', 'Voltsillam', 'rfox0');
 insert into Playlist (plID, nome, criador) values ('58e15758fc13ae454c00001f', 'Fintone', 'bphillipsv');
 insert into Playlist (plID, nome, criador) values ('58e15758fc13ae454c000020', 'Tresom', 'jpalmer16');
@@ -159,6 +163,7 @@ insert into Playlist (plID, nome, criador) values ('58e15758fc13ae454c000031', '
 insert into Playlist (plID, nome, criador) values ('58e15758fc13ae454c000032', 'Nothing can kill the Metal', 'mnguyen5');
 insert into Playlist (plID, nome, criador) values ('58e15758fc13ae454c000033', 'Tenacious Double D', 'tlynchu');
 insert into Playlist (plID, nome, criador) values ('58e15758fc13ae454c000034', 'Rock Solid', 'hthompsonn');
+
 
 insert into Musica (muID, nome, duracao) values ('58e157d2fc13ae46c700004d', 'Veribet', 441);
 insert into Musica (muID, nome, duracao) values ('58e157d2fc13ae46c700004e', 'Konklab', 103);
@@ -224,6 +229,7 @@ insert into Tipo (tipoID, nome) values ('58f266a9e0001', 'Compilation');
 insert into Tipo (tipoID, nome) values ('58f266a9e0002', 'Soundtrack');
 insert into Tipo (tipoID, nome) values ('58f266a9e0003', 'Live');
 
+
 insert into Album (abID, nome, ano, tipoID) values ('58e1126969fc13ae494e0001', 'Hardwired...To Self-Destruct', 2016, '58f266a9e0000');
 insert into Album (abID, nome, ano, tipoID) values ('58e1126969fc13ae494e0002', 'Metallica', 1991, '58f266a9e0000');
 insert into Album (abID, nome, ano, tipoID) values ('58e1126969fc13ae494e0003', 'Master Of Puppets', 1986, '58f266a9e0000');
@@ -239,7 +245,7 @@ insert into Album (abID, nome, ano, tipoID) values ('58e1126969fc13ae494e000b', 
 
 insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 'smorrisw');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 'jcook11');
-  insert into UtilizadorSegueUtilizador (username1, username2) values ('jcook11', 'crice1d');
+insert into UtilizadorSegueUtilizador (username1, username2) values ('jcook11', 'crice1d');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 'pcarrolls');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('sfisher18', 'ajacksonx');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('sfisher18', 'ggriffin13');
@@ -255,13 +261,6 @@ insert into UtilizadorSegueArtista (username, aID) values ('mmorrisk', '58e154b1
 insert into UtilizadorSegueArtista (username, aID) values ('bwalkery', '58e154b1fc13ae46c7000025');
 insert into UtilizadorSegueArtista (username, aID) values ('aknight15', '58e154b1fc13ae46c7000024');
 insert into UtilizadorSegueArtista (username, aID) values ('kperkinsh', '58e154b1fc13ae46c7000021');
-
-
-insert into UtilizadorLocaliza (username, cpGeral) values ('rkelleyj', '4430');
-insert into UtilizadorLocaliza (username, cpGeral) values ('bwatsont', '6894');
-insert into UtilizadorLocaliza (username, cpGeral) values ('kperkinsh', '4430');
-insert into UtilizadorLocaliza (username, cpGeral) values ('aknight15', '0012');
-insert into UtilizadorLocaliza (username, cpGeral) values ('mmorrisk', '1230');
 
 
 insert into UtilizadorGuardaPlaylist (username, plID) values ('rkelleyj', '58e15758fc13ae454c00002c');
