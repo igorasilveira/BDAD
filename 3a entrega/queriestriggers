@@ -1,13 +1,9 @@
 Queries:
 
-3. Listar utilziadores com subscrição premiumcom mais de 12 meses
 4. Publicidades vistas em Portugal (Ainda não sei bem deste xD)
 5. Pares de utilizadores que têm 50% de músicas ouvidas em comum
 6. Utilizadores que ouvem maior diversidade de género de álbum
-7. Utilizadores que terminaram a conta premium há mais de dois meses
-8. Listar músicas de um artista que um tilizador não tem a seguir mas que tem pelo menos uma música guardada.
 9. Utilizadores que gostam de todos álbuns de um artista (este parece muito fácil)
-10. Listar músicas que apareçam em mais de 3 albuns.
 
 Triggers:
 
