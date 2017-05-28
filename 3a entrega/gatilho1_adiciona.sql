@@ -47,7 +47,6 @@ AFTER INSERT ON UtilizadorOuveMusica
 For each row
 BEGIN
 	UPDATE Conta
-	SET dataFim = 'N/D',
 	tipoConta = '0.00',
 	preco = '0.00'
 	WHERE (
