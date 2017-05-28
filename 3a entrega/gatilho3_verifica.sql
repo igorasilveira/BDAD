@@ -1,5 +1,5 @@
 -- BDAD @ MIEIC, grupo 203
--- TRIGGER 3 - ADICIONA
+-- TRIGGER 3 - VERIFICA
 -- Ao seguir um utilizador, é criada uma playlist propria com as musicas favoritas do utilizador seguido
 
 select PlaylistGuardaMusica.musicaID AS musicaID_1 from PlaylistGuardaMusica, Playlist
