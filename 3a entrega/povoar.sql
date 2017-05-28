@@ -299,6 +299,7 @@ insert into UtilizadorFavoritaAlbum (username, albumID) values ('aknight15',2);
 insert into UtilizadorFavoritaAlbum (username, albumID) values ('bwalkery',4);
 insert into UtilizadorFavoritaAlbum (username, albumID) values ('kperkinsh',6);
 insert into UtilizadorFavoritaAlbum (username, albumID) values ('cowenso', 9);
+  insert into UtilizadorFavoritaAlbum (username, albumID) values ('rfox0', 7);
 
 
 insert into UtilizadorFavoritaMusica (username, musicaID) values ('rkelleyj', 28);
@@ -339,7 +340,7 @@ insert into AlbumGeneroMusical (albumID, generoMusicalID) values (3, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (4, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (5, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (6, 16);
-insert into AlbumGeneroMusical (albumID, generoMusicalID) values (7, 16);
+insert into AlbumGeneroMusical (albumID, generoMusicalID) values (7, 14);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (8, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (9, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (10, 16);
