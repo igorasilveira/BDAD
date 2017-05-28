@@ -221,7 +221,18 @@ insert into Musica (nome, duracao) values ('Party Like Tomorrow is the End of th
 insert into Musica (nome, duracao) values ('The Burden of Being Wonderful', 732);
 insert into Musica (nome, duracao) values ('17 Girls In a Row', 543);
 insert into Musica (nome, duracao) values ('if You Really Really Love Me', 356);
-
+insert into Musica (nome, duracao) values ('...And Justice For All', 666);
+insert into Musica (nome, duracao) values ('Low Hanging Fruit', 642);
+insert into Musica (nome, duracao) values ('Roadie', 500);
+insert into Musica (nome, duracao) values ('POD', 123);
+insert into Musica (nome, duracao) values ('The Metal', 432);
+insert into Musica (nome, duracao) values ('Tribute', 543);
+insert into Musica (nome, duracao) values ('Wonderboy', 435);
+insert into Musica (nome, duracao) values ('F%ck Her Gently', 321);
+insert into Musica (nome, duracao) values ('Rize Of The Fenix', 126);
+insert into Musica (nome, duracao) values ('To Be The Best', 286);
+insert into Musica (nome, duracao) values ('Low Hanging Fruit', 642);
+insert into Musica (nome, duracao) values ('Roadie', 500);
 
 insert into Tipo (nome) values ('Studio');
 insert into Tipo (nome) values ('Compilation');
@@ -240,6 +251,7 @@ insert into Album (nome, ano, tipoAlbumID) values ('Tenacious D', 2001, 3);
 insert into Album (nome, ano, tipoAlbumID) values ('Feel The Steel', 2009, 1);
 insert into Album (nome, ano, tipoAlbumID) values ('Balls Out', 2011, 4);
 insert into Album (nome, ano, tipoAlbumID) values ('All You Can Eat', 2013, 2);
+  insert into Album (nome, ano, tipoAlbumID) values ('Tenacious D Live', 2015, 4);
 
 
 insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 'smorrisw');
@@ -321,19 +333,54 @@ insert into AlbumRelacionaAlbum (albumID1, albumID2) values (1, 5);
 insert into AlbumRelacionaAlbum (albumID1, albumID2) values (2, 3);
 insert into AlbumRelacionaAlbum (albumID1, albumID2) values (4, 5);
 
-
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (21,1, 10);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (27,3, 10);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (34,2, 10);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (30,4, 10);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (33,5, 10);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (36,6, 11);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (46,7, 11);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (42,8, 11);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (47,9, 12);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (56,10, 12);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (33,11, 12);
-insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (52,9, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (21,1, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (22,1, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (23,1, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (24,1, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (25,1, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (26,1, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (27,3, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (28,3, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (29,3, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (30,4, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (31,4, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (32,4, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (33,5, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (58,5, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (34,2, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (35,2, 10);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (36,6, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (37,6, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (38,6, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (39,6, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (40,6, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (41,6, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (42,8, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (43,8, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (44,8, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (45,7, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (46,7, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (59,7, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (60,7, 11);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (47,9, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (48,9, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (49,9, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (50,9, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (51,9, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (52,9, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (56,10, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (57,10, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (53,11, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (54,11, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (55,11, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (61,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (62,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (63,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (64,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (65,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (66,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (67,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (68,12, 12);
 
 
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,21);
