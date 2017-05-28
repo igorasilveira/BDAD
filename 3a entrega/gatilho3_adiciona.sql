@@ -5,6 +5,7 @@
 CREATE TRIGGER generate_playlist
 AFTER INSERT ON UtilizadorSegueUtilizador
 For each row
+WHEN (select count(musicaID) from UtilizadorFavoritaMusica where username = NEW.username2) <> 0
 BEGIN
    insert into Playlist (nome, criador) values ('GENERATED_AUTOMATICALLY', NEW.username1);
 

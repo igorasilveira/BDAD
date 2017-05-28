@@ -6,6 +6,7 @@ select PlaylistGuardaMusica.musicaID from PlaylistGuardaMusica, Playlist
 where (Playlist.criador = 'jcook11' and PlaylistGuardaMusica.playlistID = Playlist.playlistID);
 
 insert into UtilizadorSegueUtilizador (username1, username2) values ('jcook11', 'rkelleyj');
+  insert into UtilizadorSegueUtilizador (username1, username2) values ('cowenso', 'jcook11');
 
   select PlaylistGuardaMusica.musicaID from PlaylistGuardaMusica, Playlist
   where (Playlist.criador = 'jcook11' and PlaylistGuardaMusica.playlistID = Playlist.playlistID);
