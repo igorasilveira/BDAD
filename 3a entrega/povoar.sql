@@ -253,6 +253,8 @@ insert into Album (nome, ano, tipoAlbumID) values ('Feel The Steel', 2009, 1);
 insert into Album (nome, ano, tipoAlbumID) values ('Balls Out', 2011, 4);
 insert into Album (nome, ano, tipoAlbumID) values ('All You Can Eat', 2013, 2);
   insert into Album (nome, ano, tipoAlbumID) values ('Tenacious D Live', 2015, 4);
+  insert into Album (nome, ano, tipoAlbumID) values ('MIEIC Live', 1988, 4);
+  insert into Album (nome, ano, tipoAlbumID) values ('FEUP SOUNDS', 2000, 1);
 
 
 insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 'smorrisw');
@@ -325,6 +327,7 @@ insert into ArtistaRelacionaArtista (artistaID1, artistaID2) values (3, 2);
 insert into ArtistaRelacionaArtista (artistaID1, artistaID2) values (10, 11);
 insert into ArtistaRelacionaArtista (artistaID1, artistaID2) values (10, 12);
 insert into ArtistaRelacionaArtista (artistaID1, artistaID2) values (11, 12);
+insert into ArtistaRelacionaArtista (artistaID1, artistaID2) values (1, 2);
 
 
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (1, 16);
@@ -338,6 +341,9 @@ insert into AlbumGeneroMusical (albumID, generoMusicalID) values (8, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (9, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (10, 16);
 insert into AlbumGeneroMusical (albumID, generoMusicalID) values (11, 16);
+insert into AlbumGeneroMusical (albumID, generoMusicalID) values (12, 16);
+insert into AlbumGeneroMusical (albumID, generoMusicalID) values (13, 2);
+insert into AlbumGeneroMusical (albumID, generoMusicalID) values (14, 3);
 
 
 insert into AlbumRelacionaAlbum (albumID1, albumID2) values (1, 2);
@@ -396,6 +402,8 @@ insert into AlbumRelacionaAlbum (albumID1, albumID2) values (4, 5);
   insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (66,12, 12);
   insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (67,12, 12);
   insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (68,12, 12);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (14,13, 1);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (14,14, 1);
 
 
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,21);
