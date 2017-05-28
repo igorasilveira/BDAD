@@ -57,7 +57,7 @@ insert into Utilizador (username, email, dataNascimento, telefone, password, cod
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, paisID) values ('bwalkery', 'jbrowny@reuters.com', '1997-08-17', '58-(784)246-6356', 'TXhZG4b4E', '4430', 1);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('vrobertsonz', 'bkellyz@prlog.org', '2009-03-09', '86-(451)435-4554', 'G39658', '4325', '2 Everett Hill', 2);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('jharris10', 'fpowell10@pen.io', '1994-01-30', '62-(333)796-6391', 'ADgCV7bYwa2Q', '1230', '56633 High Crossing Road', 3);
-insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('jcook11', 'bramos11@prweb.com', '1982-09-16', '84-(648)746-8257', 'Mg3r7K', '1230', '6006 Hanover Street', 3);
+insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('jcook11', 'bramos11@prweb.com', '1982-05-28', '84-(648)746-8257', 'Mg3r7K', '1230', '6006 Hanover Street', 3);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('chamilton12', 'psimpson12@photobucket.com', '2013-05-28', '7-(431)315-7003', '9sy1ze9chDLr', '7965', '3867 Caliangt Alley', 4);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('ggriffin13', 'aberry13@nyu.edu', '1966-11-26', '505-(215)914-7403', '4neykkkqpeM', '0012', '93637 Northfield Pass', 7);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('jrichards14', 'nstephens14@independent.co.uk', '2001-10-25', '62-(401)362-2035', '9uTMbyLsiV', '0000', '4511 Dayton Road', 8);
@@ -65,7 +65,7 @@ insert into Utilizador (username, email, dataNascimento, telefone, password, cod
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('jpalmer16', 'jhunter16@google.com', '1976-12-12', '46-(828)539-5781', 'dIvP9CTQQT', '6894', '96 Waywood Junction', 9);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('dhill17', 'sbryant17@miitbeian.gov.cn', '1956-12-05', '86-(474)657-1155', 'tCAC2Pj', '7965', '28174 Fordem Court', 4);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('sfisher18', 'mmyers18@geocities.com', '1990-07-25', '62-(341)885-5091', 'jjaUGZuF1AgR', '0000', '38 Maple Wood Junction', 5);
-insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('jwatkins19', 'vweaver19@wikimedia.org', '1986-06-10', '55-(836)977-8090', 'Rx6n4N', '0000', '59030 Moland Point', 6);
+insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('jwatkins19', 'vweaver19@wikimedia.org', '1986-05-28', '55-(836)977-8090', 'Rx6n4N', '0000', '59030 Moland Point', 6);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, paisID) values ('hromero1a', 'jwilliamson1a@oracle.com', '1975-04-18', '55-(603)478-6883', 'Sp65rDtXmhW', '0000', 8);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, morada, paisID) values ('roliver1b', 'lwilson1b@lulu.com', '1986-05-05', '1-(707)588-2036', '4BAzeELgv3c', '0000', '083 Marcy Pass', 5);
 insert into Utilizador (username, email, dataNascimento, telefone, password, codigoPostal, paisID) values ('khernandez1c', 'tjordan1c@bandcamp.com', '1956-11-16', '62-(451)578-7713', 'ZXIJlyS', '4325', 2);
@@ -368,7 +368,7 @@ insert into Conta (preco, dataInicio, dataFim, username, pagamento, tipoConta) v
 insert into Conta (preco, dataInicio, username, pagamento, tipoConta) values (0.00, '2016-12-31', 'cmasonm', 'gratuito', 0.00);
 insert into Conta (preco, dataInicio, dataFim, username, pagamento, tipoConta) values (76.89, '2016-04-31', '2017-03-31', 'hthompsonn', 'CartaoCredito', 6.99);
 insert into Conta (preco, dataInicio, dataFim, username, pagamento, tipoConta) values (8, '2016-06-31', '2017-02-28', 'cowenso', 'CartaoCredito', 6.99);
-insert into Conta (preco, dataInicio, username, pagamento, tipoConta) values (0.00, '2017-', 'wcrawfordp', 'gratuito', 0.00);
+insert into Conta (preco, dataInicio, username, pagamento, tipoConta) values (0.00, '2017-02-03', 'wcrawfordp', 'gratuito', 0.00);
 insert into Conta (preco, dataInicio, dataFim, username, pagamento, tipoConta) values (6, '2016-04-25', '2016-11-25', 'jwatsonq', 'PaysafeCard', 6.99);
 insert into Conta (preco, dataInicio, dataFim, username, pagamento, tipoConta) values (62.91, '2017-02-12', '2017-11-12', 'jlawrencer', 'PaysafeCard', 6.99);
 insert into Conta (preco, dataInicio, dataFim, username, pagamento, tipoConta) values (62.91, '2017-03-03', '2017-12-03', 'pcarrolls', 'Paypal', 6.99);
