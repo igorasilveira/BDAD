@@ -1,38 +1,13 @@
 Queries:
 
-1. Número total de músicas da banda x
-2.
-3. Listar albums por ano.
-4. Listar artistas que têm mais que uma música numa dada playlista de um amigo
-
-5. Musicas superiores a x minutos
-
-6. Listar os seguidores de um dado utilizador
-    Identificar amigos de amigos
-
-    Pares de músicas que não sejam do mesmo artita, mas de relacionados
-
-7. Listar os utilizadores com subscrição premium
-8. Publicidades vistas de um dado utilizador
-9. Listar os albuns do tipo Live de um dado artista
-10. Listar os utilizadores que seguem o artista x e que tenham guardado y musicas do dito artista.
-    Listar musicas que apareçam em mais de 3 albuns
-
-    Pares de utilizadores que têm 50% de músicas ouvidas em comum
-
-    Utilizadores de ouvem maior diversidade de género de album
-
-    Utilizadores que terminaram a conta premium a algum tempo
-
-    Listar os artistas relacionados com o artista x seguido pelo utilizador, que não são seguidos por ele e que ele tem pelo menos uma música guardada_
-
-    quais os artistas que os meus amigos em 3º grau seguem
-
-    quais os utlizadores que gostam de todos os albuns de um Artista
-
-    Listar musicas que apareçam em mais de 3 albuns
-
-
+3. Listar utilziadores com subscrição premiumcom mais de 12 meses
+4. Publicidades vistas em Portugal (Ainda não sei bem deste xD)
+5. Pares de utilizadores que têm 50% de músicas ouvidas em comum
+6. Utilizadores que ouvem maior diversidade de género de álbum
+7. Utilizadores que terminaram a conta premium há mais de dois meses
+8. Listar músicas de um artista que um tilizador não tem a seguir mas que tem pelo menos uma música guardada.
+9. Utilizadores que gostam de todos álbuns de um artista (este parece muito fácil)
+10. Listar músicas que apareçam em mais de 3 albuns.
 
 Triggers:
 
