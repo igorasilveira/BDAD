@@ -3,8 +3,10 @@
 .nullvalue NULL
 
 
-SELECT Album.nome, count(*) as contaMusicas
-FROM Album, Musica JOIN MusicaAlbumArtista
-ON Album.albumID=MusicaAlbumArtista.albumID AND Musica.musicaID=MusicaAlbumArtista.musicaID
-GROUP BY Album.nome
-ORDER BY count(*) DESC;
+SELECT DISTINCT Publicitario.nome, Publicidade.duracao AS num
+FROM Publicitario, Publicidade, Pais
+WHERE Publicitario.paisID=
+  (SELECT Pais.paisID FROM Pais WHERE Pais.nome='Portugal')
+  AND Publicidade.publicitarioID=Publicitario.publicitarioID
+  ORDER BY Publicidade.duracao
+;
