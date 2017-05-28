@@ -163,7 +163,7 @@ insert into Playlist (nome, criador) values ('Nothing can kill the Metal', 'mngu
 insert into Playlist (nome, criador) values ('Tenacious Double D', 'tlynchu');
 insert into Playlist (nome, criador) values ('Rock Solid', 'hthompsonn');
 insert into Playlist (nome, criador) values ('Panthers made of Stainless Steel', 'sfisher18');
-	
+
 
 insert into Musica (nome, duracao) values ('Veribet', 441);
 insert into Musica (nome, duracao) values ('Konklab', 103);
