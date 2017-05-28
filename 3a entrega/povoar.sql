@@ -289,6 +289,9 @@ insert into UtilizadorFavoritaAlbum (username, albumID) values ('cowenso', 9);
 
 
 insert into UtilizadorFavoritaMusica (username, musicaID) values ('rkelleyj', 28);
+insert into UtilizadorFavoritaMusica (username, musicaID) values ('rkelleyj', 29);
+insert into UtilizadorFavoritaMusica (username, musicaID) values ('rkelleyj', 30);
+insert into UtilizadorFavoritaMusica (username, musicaID) values ('rkelleyj', 31);
 insert into UtilizadorFavoritaMusica (username, musicaID) values ('aknight15',29);
 insert into UtilizadorFavoritaMusica (username, musicaID) values ('bwalkery',25);
 insert into UtilizadorFavoritaMusica (username, musicaID) values ('kperkinsh',28);
