@@ -162,7 +162,8 @@ insert into Playlist (nome, criador) values ('Best Of Metallica', 'pcarrolls');
 insert into Playlist (nome, criador) values ('Nothing can kill the Metal', 'mnguyen5');
 insert into Playlist (nome, criador) values ('Tenacious Double D', 'tlynchu');
 insert into Playlist (nome, criador) values ('Rock Solid', 'hthompsonn');
-
+insert into Playlist (nome, criador) values ('Panthers made of Stainless Steel', 'sfisher18');
+	
 
 insert into Musica (nome, duracao) values ('Veribet', 441);
 insert into Musica (nome, duracao) values ('Konklab', 103);
@@ -258,7 +259,7 @@ insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 
 insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 'jcook11');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('jcook11', 'crice1d');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('crice1d', 'pcarrolls');
-insert into UtilizadorSegueUtilizador (username1, username2) values ('sfisher18', 'ajacksonx');
+insert into UtilizadorSegueUtilizador (username1, username2) values ('sfisher18', 'rkelleyj');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('sfisher18', 'ggriffin13');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('jwatkins19', 'jwatsonq');
 insert into UtilizadorSegueUtilizador (username1, username2) values ('jpalmer16', 'ajacksonx');
@@ -272,13 +273,23 @@ insert into UtilizadorSegueArtista (username, artistaID) values ('mmorrisk', 10)
 insert into UtilizadorSegueArtista (username, artistaID) values ('bwalkery', 9);
 insert into UtilizadorSegueArtista (username, artistaID) values ('aknight15', 8);
 insert into UtilizadorSegueArtista (username, artistaID) values ('kperkinsh', 5);
+insert into UtilizadorSegueArtista (username, artistaID) values ('sfisher18', 10);
+insert into UtilizadorSegueArtista (username, artistaID) values ('sfisher18', 11);
+insert into UtilizadorSegueArtista (username, artistaID) values ('sfisher18', 12);
+insert into UtilizadorSegueArtista (username, artistaID) values ('aknight15', 1);
+insert into UtilizadorSegueArtista (username, artistaID) values ('bwalkery', 5);
+insert into UtilizadorSegueArtista (username, artistaID) values ('cowenso', 3);
 
 
-insert into UtilizadorGuardaPlaylist (username, playlistID) values ('rkelleyj', 15);
-insert into UtilizadorGuardaPlaylist (username, playlistID) values ('aknight15',20);
-insert into UtilizadorGuardaPlaylist (username, playlistID) values ('bwalkery',21);
-insert into UtilizadorGuardaPlaylist (username, playlistID) values ('kperkinsh',22);
-insert into UtilizadorGuardaPlaylist (username, playlistID) values ('cowenso', 23);
+
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('rkelleyj', 13);
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('aknight15',1);
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('bwalkery',5);
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('kperkinsh',10);
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('sfisher18', 20);
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('sfisher18', 21);
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('sfisher18', 22);
+insert into UtilizadorGuardaPlaylist (username, playlistID) values ('sfisher18', 23);
 
 
 insert into UtilizadorFavoritaAlbum (username, albumID) values ('rkelleyj', 1);
@@ -300,6 +311,10 @@ insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('aknig
 insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('bwalkery',27, '2017-05-28 15:10:45.100');
 insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('kperkinsh',10, '2017-06-06 03:10:25.100');
 insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('cowenso', 20, '2017-05-31 23:10:12.100');
+insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('sfisher18', 31, '2016-10-06 23:10:12.100');
+insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('sfisher18', 37, '2017-01-31 23:10:12.100');
+insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('sfisher18', 52, '2016-08-16 23:10:12.100');
+insert into UtilizadorOuveMusica (username, musicaID, time_stamp) values ('sfisher18', 14, '2017-05-10 23:10:12.100');
 
 
 insert into ArtistaRelacionaArtista (artistaID1, artistaID2) values (1, 7);
@@ -390,6 +405,51 @@ insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,24);
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,25);
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,33);
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,32);
+
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,36);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,37);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,38);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,39);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,40);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,41);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,42);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,43);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,44);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,45);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,46);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,47);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(22,48);
+
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,22);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,21);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,25);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,27);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,30);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,50);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,44);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,60);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,61);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,24);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,40);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,38);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,41);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,29);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,49);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,39);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,62);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(21,69);
+
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,47);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,48);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,49);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,50);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,51);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,52);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,53);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,54);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,55);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,56);
+insert into PlaylistGuardaMusica (playlistID, musicaID) values(23,57);
 
 
 insert into Conta (preco, dataInicio, username, pagamento, tipoConta) values (0.00, '2017-01-31', 'rfox0', 'gratuito', 0.00);
