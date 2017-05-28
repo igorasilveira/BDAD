@@ -2,11 +2,14 @@
 .headers ON
 .nullvalue NULL
 
---Albuns com mais de 200 minutos
+--Albuns com mais de 30 minutos
 
-SELECT Album.nome AS Album, SUM(Musica.duracao) AS DuracaoTotal
-FROM MusicaAlbumArtista
-LEFT JOIN Album ON MusicaAlbumArtista.albumID=Album.albumID
-LEFT JOIN Musica ON MusicaAlbumArtista.musicaID=Musica.musicaID
-WHERE DuracaoTotal>200
-GROUP BY Album.nome;
+
+SELECT Album.nome as Album, SUM(Musica.duracao) as DuracaoTotal
+FROM Album, Musica JOIN MusicaAlbumArtista
+ON MusicaAlbumArtista.albumID=Album.albumID
+AND MusicaAlbumArtista.musicaID=Musica.musicaID
+GROUP BY Album.nome
+HAVING DuracaoTotal>1800
+ORDER BY DuracaoTotal
+;
