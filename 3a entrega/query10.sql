@@ -10,3 +10,5 @@ INNER JOIN Musica ON Musica.musicaID=MusicaAlbumArtista.musicaID
 INNER JOIN Album ON Album.albumID=MusicaAlbumArtista.albumID
 GROUP BY Musica.nome
 HAVING numMusicasVariosAlbuns> 1
+ORDER BY numMusicasVariosAlbuns
+;

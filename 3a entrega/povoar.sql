@@ -407,8 +407,9 @@ insert into AlbumRelacionaAlbum (albumID1, albumID2) values (4, 5);
   insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (68,12, 12);
   insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (14,13, 1);
   insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (14,14, 1);
-
-
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (42,1, 1);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (42,2, 1);
+  insert into MusicaAlbumArtista (musicaID, albumID, artistaID) values (40,1, 1);
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,21);
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,22);
 insert into PlaylistGuardaMusica (playlistID, musicaID) values(20,23);
