@@ -96,13 +96,13 @@ insert into Publicitario (nome, investimento, paisID) values ('Skiba', 86932, 3)
 insert into Publicitario (nome, investimento, paisID) values ('Meetz', 56539, 4);
 insert into Publicitario (nome, investimento, paisID) values ('Fiveclub', 50724, 5);
 insert into Publicitario (nome, investimento, paisID) values ('Quimba', 77819, 6);
-insert into Publicitario (nome, investimento, paisID) values ('Aibox', 57967, 7);
+insert into Publicitario (nome, investimento, paisID) values ('Aibox', 57967, 1);
 insert into Publicitario (nome, investimento, paisID) values ('Oyoba', 96388, 8);
 insert into Publicitario (nome, investimento, paisID) values ('Ntags', 36152, 9);
 
 
 insert into Publicidade (duracao, publicitarioID) values (440, 1);
-insert into Publicidade (duracao, publicitarioID) values (583, 2);
+insert into Publicidade (duracao, publicitarioID) values (583, 1);
 insert into Publicidade (duracao, publicitarioID) values (903, 3);
 insert into Publicidade (duracao, publicitarioID) values (69, 4);
 insert into Publicidade (duracao, publicitarioID) values (828, 5);
