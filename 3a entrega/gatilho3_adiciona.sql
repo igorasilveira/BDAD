@@ -7,7 +7,7 @@ AFTER INSERT ON UtilizadorSegueUtilizador
 For each row
 WHEN (select count(musicaID) from UtilizadorFavoritaMusica where username = NEW.username2) <> 0
 BEGIN
-   insert into Playlist (nome, criador) values ('GENERATED_AUTOMATICALLY', NEW.username1);
+   insert into Playlist (nome, criador) values (datetime('now'), NEW.username1);
 
      insert into PlaylistGuardaMusica (playlistID, musicaID)
      select distinct playlistID, musicaID from Playlist JOIN  UtilizadorFavoritaMusica

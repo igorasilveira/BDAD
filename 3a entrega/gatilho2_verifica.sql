@@ -1,5 +1,5 @@
 -- BDAD @ MIEIC, grupo 203
--- TRIGGER 2 - ADICIONA
+-- TRIGGER 2 - VERIFICA
 -- Um utilizador ao guardar uma playlist fica automaticamente a seguir o criador da mesma
 
 SELECT * FROM UtilizadorSegueUtilizador;
